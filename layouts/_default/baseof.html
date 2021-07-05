@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+<html lang="{{ .Site.Language }}" dir="{{ .Language.LanguageDirection | default " auto" }}">
 
 <head>
     {{- partial "head.html" . }}
@@ -7,12 +7,16 @@
 
 <body class="
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
-{{- print "list" -}}
-{{- end -}}
-{{- if eq $.Site.Params.defaultTheme `dark` -}}
-{{- print " dark" }}
-{{- end -}}
-" id="top">
+{{- print " list" -}} {{- end -}} {{- if eq $.Site.Params.defaultTheme `dark` -}} {{- print " dark" }} {{- end
+    -}} " id=" top">
+    {{- if .Site.Params.analytics.google.GTMCode }}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.analytics.google.GTMCode }}"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {{- end }}
+
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
