@@ -9,7 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-googleAnalytics: UA-123-45
+# googleAnalytics: UA-123-45
 
 minify:
     disableXML: true
@@ -72,7 +72,7 @@ languages:
               url: "index.xml"
 
         editPost:
-            URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+            URL: "https://github.com/JonyBepary/Jonys-Blog/tree/master/content"
             Text: "Suggest Changes" # edit text
             appendFilePath: true # to append file path to Edit link
 
@@ -120,6 +120,8 @@ params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowToc: true
+    TocOpen: false
+
     # comments: false
     images: ["Cover.png"]
 
