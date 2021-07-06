@@ -103,10 +103,9 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Welcome to My Blog. Here you'll find some of those Things that intruged me.
-    Maybe it's pretty simple or very complex sometimes it can be complicated.
-    But If it's fasinates me. You'll find here. It's all about me.
-    Mostly you can expect things like Data Structure, Algorithm Analysis, Math and many more."
+    description: "Welcome to My Blog.
+Here you'll find some of those things that intrigued me. Maybe it's pretty simple or very complex sometimes can be complicated.But If it fascinates me. You'll find it here. It's all about me.
+Mostly you can expect things like Data Structure, Algorithm Analysis, Math, and many more."
     author: Jony Bepary
     # author: ["Me", "You"] # multiple authors
 
